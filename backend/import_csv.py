@@ -1,5 +1,5 @@
 import os
-os.environ.setdefault('DJANGO_SETTINGS_MODULE','project.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE','demo.settings')
 
 import django
 django.setup()
@@ -63,6 +63,6 @@ def import_movies(file_path, max_rows = 50000):
 if __name__ == '__main__':
 
     print('importing movies...')
-    rows_added = import_movies('data/db/movies_keywords.csv')
+    rows_added = import_movies('data/db/movies_small.csv')
     print(f'{rows_added} movies added')
 

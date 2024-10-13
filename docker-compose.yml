@@ -41,9 +41,9 @@ services:
       retries: 5000
   
   frontend:
-    build: ./frontend/project-frontend
+    build: ./frontend/vue-frontend
     volumes: 
-      - ./frontend/project-frontend:/app
+      - ./frontend/vue-frontend:/app
       - /app/node_modules
     ports:
       - "5173:5173"

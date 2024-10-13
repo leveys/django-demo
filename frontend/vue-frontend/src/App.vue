@@ -8,13 +8,11 @@
 <script>
     import MovieList from './components/MovieList.vue';
     import MovieDetail from './components/MovieDetail.vue';
-    import HomePage from './components/HomePage.vue'
     import Toolbar from './components/Toolbar.vue';
 
     export default {
         name: 'App',
         components: {
-            HomePage,
             MovieList,
             MovieDetail,
             Toolbar
